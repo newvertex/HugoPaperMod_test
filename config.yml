@@ -1,0 +1,52 @@
+baseURL: "http://example.org/"
+title: "My New Hugo Site"
+theme: "hugo-PaperMod"
+paginate: 8
+defaultContentLanguage: fr
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+languages:
+  fr:
+    languageName: "French"
+    weight: 1
+    menu:
+      main:
+        - name: "french archives"
+          url: "/archives"
+          weight: 1
+    homeInfoParams:
+      Title: "french language title"
+
+  en:
+    languageName: "English"
+    weight: 2
+    ShowReadingTime: true
+    menu:
+      main:
+        - name: "Archives"
+          url: "/archives"
+          weight: 1
+    homeInfoParams:
+      Title: "english language title"
+
+params:
+  env: production
+  title: My New Hugo Site
+  author: me
+
+  ShowShareButtons: true
+  comments: true
+  defaultTheme: auto
+  disableThemeToggle: false
+  disableSpecial1stPost: false
+
+  cover:
+    responsiveImages: true
+    linkFullImages: true
